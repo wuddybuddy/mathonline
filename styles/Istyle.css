@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+body {
+    overflow: hidden;
+}
+
+.text {
+    color: #9CFC97;
+    font-size: 17px;
+    letter-spacing: 1px;
+    background: transparent;
+    padding: 3px;
+    font-family: 'Odibee Sans', cursive;
+}
+
+.hero-image {
+    background: url("../assets/bg.jpg") center no-repeat;
+    background-size:cover;
+    height: 85.4vh;
+    width: 100%;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    height:85%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.hero-marketing-text {
+    max-width: 1200px;
+    margin: -30px auto 0;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    font-family: 'Odibee Sans', cursive;
+}
+
+.hero-marketing-text h1 {
+    color: #9CFC97;
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin: 0.5rem 0;
+}
+
+.hero-marketing-text span {
+    color: #ffffff;
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin: 0.5rem 0;
+}
+
+.hero-marketing-text h5 {
+    color: #9CFC97;
+    font-size: 1.5rem;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 1;
+}
