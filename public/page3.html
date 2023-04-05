@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Chat</title>
+  <link rel="icon" href="../assets/controller-g22088f06d_1280.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      max-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #1F2030;
+      font-family: 'Odibee Sans', cursive;
+      color: #9CFC97;
+      height:100%;
+    }
+
+    .chat {
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+    }
+
+    .members-count,
+    .members-list,
+    .messages {
+      border: 1px solid #e4e4e4;
+      padding: 15px;
+      margin-bottom: 15px;
+      font-size: 25px;
+    }
+
+    .members-list {
+        height: 80px;
+        overflow: auto;
+    }
+
+    .messages {
+      flex-shrink: 1;
+      overflow: auto;
+      height: 260px;
+    }
+
+    .message {
+      padding: 5px 0;
+    }
+    .message .member {
+      display: inline-block;
+    }
+
+    .member {
+      padding-right: 10px;
+      position: relative;
+    }
+
+    .message-form {
+      display: flex;
+      flex-shrink: 0;
+    }
+    .message-form__input {
+      flex-grow: 1;
+      border: 1px solid #dfdfdf;
+      padding: 10px 15px;
+      font-size: 16px;
+      background: transparent;
+      color: #9CFC97;
+      outline: none;
+    }
+    .message-form__button {
+      margin-left: 10px;
+      height: 40px;
+      width: 100px;
+      border: 1px solid #fff;;
+      color: #9CFC97;
+      font-size: 15px;
+      background: transparent;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+  </style>
+  <link rel="stylesheet" href="../styles/Nav.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Gamer <span style="color: #fff;">Underground</span></h1>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./page1.html">Unblocker</a></li>
+                <li><a href="./page2.html">Games</a></li>
+                <li><a href="./page3.html">Live Chat</a></li>
+            </ul>
+        </nav>
+        <a href="./page2.html" class="cta"><button>Play</button></a>
+    </header>
+    <div class="chat">
+        <div class="members-count">-</div>
+        <div class="members-list">-</div>
+        <div class="messages"></div>
+        <form class="message-form" onsubmit="return false;">
+            <input class="message-form__input" placeholder="Type a message.." type="text"/>
+            <input class="message-form__button" value="Send" type="submit"/>
+        </form>
+    </div>
+    <script src="../scripts/chat.js"></script>
+</body>
+</html>
